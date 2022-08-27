@@ -15,18 +15,28 @@
 }
 
 .col-2-flex-left {
-  width: 132px;
-  height: 852px;
+  width: max(8%, 100px);
   background-color: #0c0b0b;
+  display: flex;
+  flex-direction: column;
   border-radius: 24px;
-}
-.right {
-  width: 1200px;
+  height: 820px;
 }
 .col-2-flex-left div {
   width: 100%;
-  padding: 41px 50px;
+  padding: 31px 35px;
+  transition: all 0.5s;
 }
+
+.col-2-flex-left div:hover {
+  background-color: rgba(241, 213, 187, 0.736);
+  transform: scale(1.1, 1.1);
+}
+
+.right {
+  width: 1200px;
+}
+
 .S {
   font-family: "Baloo Bhai 2", cursive;
   font-size: 64px;
@@ -40,6 +50,7 @@
 
 .col-2-flex-right {
   display: flex;
+  max-width: 1094px;
   flex-direction: row;
   flex-wrap: wrap;
   margin-block: 48px;
@@ -60,8 +71,8 @@
 }
 
 .col-2-flex-right-item img {
-  width: 224px;
-  height: 275px;
+  width: 200px;
+  height: 250px;
 }
 .col-2-flex-right-item p {
   /* margin-top: 8px; */

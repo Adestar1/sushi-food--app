@@ -14,19 +14,25 @@ body {
   display: flex;
   flex-direction: row;
   padding: 43px 57px;
-  column-gap: 55px;
+  column-gap: 45px;
 }
 .col-2-flex-left {
-  width: max(8%, 130px);
+  width: max(8%, 100px);
   background-color: #0c0b0b;
   display: flex;
   flex-direction: column;
   border-radius: 24px;
-  height: 852px;
+  height: 820px;
 }
 .col-2-flex-left div {
   width: 100%;
-  padding: 41px 50px;
+  padding: 31px 35px;
+  transition: all 0.5s;
+}
+
+.col-2-flex-left div:hover {
+  background-color: rgba(241, 213, 187, 0.736);
+  transform: scale(1.1, 1.1);
 }
 .S {
   font-family: "Baloo Bhai 2", cursive;
@@ -39,6 +45,9 @@ body {
   padding: 0;
 }
 
+.right {
+  width: 100%;
+}
 .cart-header {
   font-family: Mulish;
   font-size: 50px;
@@ -51,27 +60,28 @@ body {
   width: fit-content;
 }
 
-.right {
-  width: 100%;
-}
 .right-col-2-flex {
   display: flex;
   flex-direction: row;
   margin-top: 24px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   row-gap: 20px;
-  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .right-col-2-flex {
+    flex-wrap: wrap;
+  }
 }
 
 .col-2-flex-item-left {
-  width: 630px;
-  height: 620px;
+  width: 610px;
+  height: 610px;
   display: flex;
   flex-direction: column;
   row-gap: 56px;
   background-color: #f1d5bb;
   border-radius: 3px;
-  padding: 37px 23px 43px 20px;
+  padding: 30px 18px 40px 17px;
 }
 
 .col-2-flex-item-left .row {
@@ -82,8 +92,8 @@ body {
 }
 
 .col-2-flex-item-left .row img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
 }
 /* 
 .col-2-flex-item-left .row .div1 {
@@ -129,13 +139,13 @@ body {
 
 .col-2-flex-item-right {
   display: block;
-  width: 443px;
-  margin-left: 41px;
+  width: 410px;
+  margin-left: 30px;
   border: 1px solid #f1d5bb;
 }
 
 .col-2-flex-item-right > div {
-  padding: 22px 38px 33px 40px;
+  padding: 20px 30px 30px 32px;
 }
 
 .col-2-flex-item-right > div h3 {
@@ -166,7 +176,9 @@ body {
   line-height: 38px;
   letter-spacing: 0em;
   color: #ffffff;
-  padding: 20px 70px;
+  padding: 20px 45px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .col-2-flex-item-right > div input {
   padding: 20px;
@@ -176,7 +188,7 @@ body {
   font-weight: 200;
   line-height: 38px;
   letter-spacing: 0em;
-  width: 365px;
+  width: 100%;
 }
 
 .col-2-flex-item-right > div input[type="submit"] {
@@ -188,7 +200,14 @@ body {
   letter-spacing: 0em;
   padding: 20px 42px;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
   background-color: #000000;
+}
+.col-2-flex-item-right > div input[type="submit"]:hover,
+.col-2-flex-item-right > div .my-btn:hover {
+  opacity: 0.7;
+  transform: translate(3px, 3px);
 }
 footer p {
   font-family: Mulish;
