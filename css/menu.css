@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-2-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 43px 57px;
+  column-gap: 53px;
+}
+
+.col-2-flex-left {
+  width: 132px;
+  height: 852px;
+  background-color: #0c0b0b;
+  border-radius: 24px;
+}
+.right {
+  width: 1200px;
+}
+.col-2-flex-left div {
+  width: 100%;
+  padding: 41px 50px;
+}
+.S {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 102px;
+  letter-spacing: 0em;
+  color: #f1d5bb;
+  margin: 0;
+  padding: 0;
+}
+
+.col-2-flex-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-block: 48px;
+  column-gap: 66px;
+  row-gap: 36px;
+}
+
+.menu-header {
+  font-family: Mulish;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 5px solid #f1d5bb;
+  color: black;
+  width: fit-content;
+}
+
+.col-2-flex-right-item img {
+  width: 224px;
+  height: 275px;
+}
+.col-2-flex-right-item p {
+  /* margin-top: 8px; */
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.my-btn {
+  background-color: #000000;
+  color: white;
+  width: 194px;
+  height: 54px;
+  position: relative;
+  left: 45%;
+  transform: translateX(-45%);
+  padding: 12px 34px;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 300;
+  /* line-height: 25px; */
+  letter-spacing: 0em;
+  border-radius: 2px;
+  border: none;
+}
+
+footer p {
+  font-family: Mulish;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 244px;
+}
